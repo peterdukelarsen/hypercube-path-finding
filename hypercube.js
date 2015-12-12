@@ -51,3 +51,5 @@ var makePath = function(vertices, a_array, b_array) {
 var compVert = function(a_array, b_array) {
 	return (Hamming(a_array, b_array) === 0);
 }
+
+// need to figure out how i will print, and what main will look like
