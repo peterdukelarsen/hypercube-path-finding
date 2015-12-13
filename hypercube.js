@@ -14,6 +14,7 @@ var Hamming = function(a_array, b_array) {
 }
 
 var makePath = function(vertices, a_array, b_array) {
+	var printString = "";
 	var ham = Hamming(a_array, b_array);
 	var path = []; // path is an array of vertices (array of arrays)
 	var temp_vert = a_array;
@@ -30,6 +31,7 @@ var makePath = function(vertices, a_array, b_array) {
 		++j;
 	}
 	var temp = -1;
+	printString += "Possible path: <br/>";
 	for (g = 0; g < path.length; ++g) {
 		temp = -1;
 		for (z = 0; z < vertices.length; ++z) {
@@ -37,19 +39,48 @@ var makePath = function(vertices, a_array, b_array) {
 				temp = i;
 			}
 		}
-		// some cout thing
+		printString += (spaced(temp, 3) + " ");
 	}
-	// endl
+	printString += "<br/>";
 	for (w = 0; w < path.length; ++w) {
-		// come cout
+		printString += spaced("- ", 4);
 	}
-	// endl
-	// printVertices
+	printString += "<br/>";
+	return (printString + printVertices(path, 0));
 }
 
 
 var compVert = function(a_array, b_array) {
 	return (Hamming(a_array, b_array) === 0);
+}
+
+var spaced = function(someString, size) {
+	var space_string = "";
+	for (i = size - someString.length; i < size; ++i) {
+		space_string += " ";
+	}
+	return (someString + space_string);
+}
+
+var printVertices = function(vertices, printI) {
+	var printString = "";
+	if (printI) {
+		for (i=0; i < vertices.length; ++i) {
+			printString += (spaced(i.toString(), 3) + " ");
+		}
+		printString += "<br/>";
+		for (j=0; j < vertices.length; ++j) {
+			printString += spaced("- ", 4);
+		}
+		printString += "<br/>";
+	}
+	for (g=0; g < vertices[0].length; ++g) {
+		for (k=0; k < vertices.length; ++k) {
+			printString += (spaced(vertices[k][g], 3) + " ");
+		}
+	}
+	return printString;
+	// document.getElementById(element_id).innerHTML = printString;
 }
 
 // need to figure out how i will print, and what main will look like
