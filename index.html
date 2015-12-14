@@ -21,8 +21,7 @@
       <h1 class="project-name">Math 214 Hypercube Applications and Visualizations in Computer Science</h1>
       <h2 class="project-tagline">By: Peter Larsen, Courtney Congdon, and Pranav Mayuram</h2>
       <a href="https://github.com/peterdukelarsen/hypercube-path-finding/tree/gh-pages" class="btn">View on GitHub</a>
-      <a href="https://github.com/peterdukelarsen/hypercube-path-finding/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/peterdukelarsen/hypercube-path-finding/tarball/master" class="btn">Download .tar.gz</a>
+      <a href="https://github.com/peterdukelarsen/hypercube-path-finding/archive/gh-pages.zip" class="btn">Download .zip</a>
     </section>
 
     <section class="main-content">
@@ -33,7 +32,7 @@
     <iframe width="600" height="450" src="http://www.youtube.com/embed/RN0BLRnBOKk?loop=1&autoplay=1"></iframe>
 </div>
 
-<p>This is a video of the MATLAB visualization we used to understand how the 4D visualization of hypercubes works. The program works by generating a 4D cube's matrix, and plotting all of the x and y coordinates of it (program ignores projections - though they are explained in our presentation). This method ignores projections in higher dimensions, and instead seeks to create a proper visualization through rotations. The program combines all of the rotation matrices for 4 dimensions, and then rotates them simultaneously by a singele angle value (theta). This then gives a rather complete appearance of the 4D visualization, though it does miss out on a few images because of its lack of projection. The writer of the code mentions in their paper that the projections were too complex for the scope of their project, and was a rather tough concept to grasp in 4 dimensions.</p>    
+<p>This is a video of the <a href="https://github.com/peterdukelarsen/hypercube-path-finding/tree/gh-pages/MATLAB_visualization">MATLAB visualization</a> we used to understand how the 4D visualization of hypercubes works. The program (Kiewel, A, n.d.) works by generating a 4D cube's matrix, and plotting all of the x and y coordinates of it (program ignores projections - though they are explained in our presentation). This method ignores projections in higher dimensions, and instead seeks to create a proper visualization through rotations. The program combines all of the rotation matrices for 4 dimensions, multiplies them, to get a matrix which will rotate around all axes simultaneously by a single angle value (theta). This then gives a rather complete appearance of the 4D visualization, though it does miss out on a few images because of its lack of projection. The writer of the code mentions in their paper that the projections were too complex for the scope of their project, and was a rather tough concept to grasp in 4 dimensions.</p>
 
 <h3>
 <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hamming Distance Calculator</h3>
@@ -65,9 +64,21 @@
 
 <div style="white-space: pre-wrap;" ng-bind-html="pathPrintArea"></div>
 
+<h3>
+<a id="applications" class="anchor" href="#applications" aria-hidden="true"><span class="octicon octicon-link"></span></a>Applications of Hypercubes</h3>
+
+<h4><font color="black">Multiprocessor Architecture - Hypercubes in Tech</font></h4>
+
+<p>Hypercubes have also been advantageous for multiprocessor architecture. The earliest multiprocessor design proposal to employ an interconnection scheme using a hypercube appeared in 1963 by Squire and Palais from the University of Michigan. The design they provided used a 4096 node hypercube connected processor. The hypercube based architecture is comprised of N=2n processing nodes interconnected as an-dimensional binary cube. Each processing node corresponds to a vertex and contains its own local memory which allows for direct communication links to n other processors. Using the Hamming distance to find the shortest path, as well as the parallel patch allows for direct communication to be easy and efficient. Hypercubes allow the distance between processors and the complexity of the connections between processors to grow logarithmically with the number of processors in the system (Buzzard, 1998). Computing a possible path, as well as the number of parallel paths is easy and fast (O(log(n)), as it requires at most as many operations as the dimensions of the hypercube.</p>
+
+<h4><font color="black">EMS usage - Hypercubes in Emergencies</font></h4>
+
+<p>Emergency medical services (EMS) use the hypercube in devising and assessing efficient operating rules for emergency systems. The arrival time of ambulances to accident locations and dispatching rules for assigning ambulances to emergency calls are key factors that influence EMS performance and are major problems for EMS. The hypercubes model computes server performance measures such as average response time, server workloads or the probability of all servers being busy. In 2003 Burwell used a hypercube model to model co-located servers that connect dispatch preference lists and in 2009 Budge expanded this version to input station specific busy probabilities rather than server busy probabilities (Baptista, 2011). This made it possible for other departments to send emergency vehicles when the available units in the area could not reach the location within a reasonable amount of time or in the event that all units were all simultaneously busy.</p>
 
 <h3>
 <a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span class="octicon octicon-link"></span></a>Works Cited</h3>
+
+<p>Baptista, S., &amp; Oliveira, R. (2011). A case study on the application of an approximated hypercube model to emergency medical systems management. Cent Eur J Oper Res Central European Journal of Operations Research, 559-581.</p>
 
 <p>Buzzard, G. (1988). High performance communications for hypercube multiprocessors. Ann Arbor, Mich.: University of Michigan, Computer Science and Engineering Division, Dept. of Electrical Engineering and Computer Science.</p>
 
@@ -96,7 +107,7 @@
 <p>Weisstein, E. (n.d.). Hypercube. Retrieved December 13, 2015, from <a href="http://mathworld.wolfram.com/Hypercube.html">http://mathworld.wolfram.com/Hypercube.html</a></p>
 
       <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/peterdukelarsen/hypercube-path-finding">Hypercube-path-finding</a> is maintained by <a href="https://github.com/peterdukelarsen">peterdukelarsen</a> and <a href="https://github.com/pranavmayuram">pranavmayuram</a>.</span>
+        <span class="site-footer-owner"><a href="https://github.com/peterdukelarsen/hypercube-path-finding/tree/gh-pages">Hypercube-path-finding</a> is maintained by <a href="https://github.com/peterdukelarsen">peterdukelarsen</a> and <a href="https://github.com/pranavmayuram">pranavmayuram</a>.</span>
       </footer>
 
     </section>

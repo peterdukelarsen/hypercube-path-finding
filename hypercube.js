@@ -174,7 +174,7 @@ var main2 = function(dim, vertices, indexA, indexB) {
 	var ham = Hamming(vertices[indexA], vertices[indexB]);
 	printString += "<br/>";
 	printString += "The Hamming distance (H(A, B)) is: " + ham + "<br/>";
-	printString += "Parallel paths of any length less than: " + dim + "<br/>";
+	printString += "Parallel paths of any length: " + dim + "<br/>";
 	printString += "Parallel paths, length H(A, B) : " + ham + "<br/><br/>";
 	printString += makePath(vertices, vertices[indexA], vertices[indexB]);
 	return printString;
